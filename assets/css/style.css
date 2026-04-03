@@ -1,0 +1,112 @@
+﻿@font-face {
+  font-family: 'resident-evil-requiem-font'; 
+  src: url('../fonts/resident-evil-requiem-font.woff2') format('woff2'),
+       url('../fonts/resident-evil-requiem-font.woff') format('woff'),
+       url('../fonts/resident-evil-requiem-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'resident-evil-requiem-font', Arial, sans-serif;
+}
+
+.navbar-brand,
+.display-3,
+.lead,
+.mb-4 {
+  font-family: 'resident-evil-requiem-font', sans-serif;
+}
+
+.container-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px;
+  background-color: #1a1a1a;
+  font-family: 'resident-evil-requiem-font', sans-serif; 
+}
+
+.card-personagem {
+  position: relative;
+  width: 260px;
+  height: 380px;
+  background-color: #2a2a2a;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-personagem:hover {
+  background-color: var(--cor-destaque);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.imagem-personagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.3, 1.3);
+}
+
+.card-personagem:hover .imagem-personagem {
+  transform: scale(1.15) translateY(-15px);
+}
+
+.info-personagem {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-personagem h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.info-personagem p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+:root {
+    --re-red: #8b0000;
+    --re-dark-bg: #0a0a0a;
+    --re-gray: #b0b0b0;
+}
+
+body {
+    background-color: #111;
+}
+
+.bg-re-dark {
+    background-color: var(--re-dark-bg);
+    border-bottom: 1px solid #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+
